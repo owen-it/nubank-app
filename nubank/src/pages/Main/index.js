@@ -1,8 +1,21 @@
 import React from 'react';
 
-import { View, Text } from 'react-native';
-import { Container } from './styles';
+import Header from '~/components/Header';
+import Tabs from '~/components/Tabs';
+import Balance from '~/components/Balance';
+import Menu from '~/components/Menu';
+
+import { Container, Content } from './styles';
 
 export default function() {
-  return <Container />;
+  return (
+    <Container>
+      <Header />
+      <Content>
+        <Balance />
+        <Menu />
+      </Content>
+      <Tabs />
+    </Container>
+  );
 }
